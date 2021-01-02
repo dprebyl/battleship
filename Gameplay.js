@@ -120,6 +120,7 @@ class Gameplay {
 				if (cell.hasShip) {
 					let board = this.turn ? this.board0 : this.board1;
 					this.msg("Hit!");
+					new Audio("hit.wav").play();
 					board.shipSpaces--;
 					if (board.checkWin()){
 						this.gameEnd();
@@ -133,6 +134,7 @@ class Gameplay {
 					this.renderBoards(true);
 					document.getElementById("switch-turn").style.display = "";
 					this.msg("Miss.")
+					new Audio("miss.wav").play();
 				}
 			}
 		}
