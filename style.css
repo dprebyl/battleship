@@ -79,10 +79,11 @@ input {
 
 #menu h2 {
 	margin-top: 0;
+	margin-bottom: 0.4em;
 }
 
-#ship-slider {
-	vertical-align: bottom;
+input[type=range] {
+	width: 200px;
 }
 
 .board-container {

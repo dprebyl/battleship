@@ -13,16 +13,22 @@
 	<body>
 		<h1>BATTLESHIP</h1>
 
-		<!-- Probably add CSS to this -->
 		<div style="text-align:center" id="menu">
             <h2>WELCOME</h2>
             <p>Enter player names (optional):</p>
 			<p> Player 1:  <input autofocus type="text" id="player0-name-input"></p>
 			<p> Player 2:  <input type="text" id="player1-name-input"></p>
-			<p>Select number of ships:</p>
 			<p>
+				Select number of ships:
+				<br>
 				<input type="range" min="1" max="5" value="5" id="ship-slider">
 				<span id="num-ships">5</span>
+			</p>
+			<p>
+				Select size of board:
+				<br>
+				<input type="range" min="5" max="26" value="9" id="board-slider">
+				<span id="board-size">9</span>
 			</p>
 			<input type="button" id="complete" value="Start">
 		</div>
